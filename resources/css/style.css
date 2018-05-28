@@ -1,23 +1,32 @@
+/* reset */
 * {
   padding: 0;
   margin: 0;
 }
 
-body {
+/* page style */
+div, body {
   font-family: Helvetica, sans-serif;
-  font-size: 22px;
   color: seashell;
-  background-color: black;
   opacity: 0.9;
+}
+
+header span {
+  text-decoration: underline;
+}
+
+body {
+  font-size: 22px;
+  background-color: black;
   text-align: center;
 }
 
+/* header */
 header {
   display: flex;
   position: fixed;
   height: 69px;
   border-bottom: 1px solid seashell;
-  text-decoration: underline;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -44,6 +53,7 @@ nav span {
   padding: 0 15px;
 }
 
+/* page body layout */
 .content-container {
   position: relative;
   top: 70px;
@@ -52,6 +62,7 @@ nav span {
   align-items: center;
 }
 
+/* mission section */
 .mission-container {
   display: flex;
   align-items: center;
@@ -69,21 +80,7 @@ nav span {
   height: 100px;
 }
 
-.featured-container {
-  width: 1000px;
-  margin-top: 70px;
-}
-
-.featured-container h2 {
-  padding-bottom: 15px;
-}
-
-.featured {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
+/* featured section */
 .item {
   display: flex;
   flex-flow: column nowrap;
@@ -97,17 +94,22 @@ nav span {
   padding-bottom: 15px;
 }
 
-.location-container {
-  background: url("../images/locations-background.jpg");
+.featured {
   display: flex;
-  height: 500px;
-  width: 1200px;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+}
+
+.featured-container {
+  width: 1000px;
   margin-top: 70px;
 }
 
+.featured-container h2 {
+  padding-bottom: 15px;
+}
+
+/* location section */
 .location {
   width: 300px;
   height: 300px;
@@ -119,6 +121,39 @@ nav span {
   opacity: 1;
 }
 
+.location-container {
+  background: url("../images/locations-background.jpg");
+  display: flex;
+  height: 500px;
+  width: 1200px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-top: 70px;
+}
+
 .location-title {
   width: 100%;
+}
+
+/* contact section */
+.contact-container {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 200px;
+}
+
+.contact-container h2 {
+  margin: 10px 0 30px 0;
+}
+
+.contact-container h5 {
+  margin: 15px;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  padding-left: 20px;
+  text-align: left;
 }
