@@ -53,6 +53,14 @@ nav span {
   padding: 0 15px;
 }
 
+.mobile {
+  display: none;
+}
+
+a {
+  color: seashell;
+}
+
 /* page body layout */
 .content-container {
   position: relative;
@@ -156,4 +164,45 @@ footer {
   width: 100%;
   padding-left: 20px;
   text-align: left;
+}
+
+@media only screen and (max-width: 1300px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: list-item;
+    background-color: seashell;
+    width: 100%;
+    margin-right: 0;
+    padding: 1rem 0;
+  }
+
+  .mobile-list {
+    display: none;
+  }
+
+  header {
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .logo img {
+    height: 100px;
+    padding: 1rem 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  nav li {
+    padding: .5rem;
+    margin-top: .5rem;
+    border-top: 1px solid black;
+  }
 }

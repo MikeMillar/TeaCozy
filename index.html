@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Tea Cozy</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="./resources/css/style.css">
   </head>
   <body>
@@ -12,16 +13,16 @@
         <img src="./resources/images/tea-cozy-logo.png" alt="Tea Cozy Logo">
       </div>
       <nav class="desktop">
-        <span>Mission</span>
-        <span>Featured Tea</span>
-        <span>Locations</span>
+        <a href="#mission"><span>Mission</span></a>
+        <a href="#featured"><span>Featured Tea</span></a>
+        <a href="#location"><span>Locations</span></a>
       </nav>
       <nav class="mobile">
-        <a href="#" id="nav-toggle" class="position"></a>
+        <a href="#" id="nav-toggle" class="position"><i class="fa fa-bars fa-lg"></i></a>
         <ul class="mobile-list">
-          <li><a href="#">Mission</a></li>
-          <li><a href="#">Featured Tea</a></li>
-          <li><a href="#">Locations</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#featured">Featured Tea</a></li>
+          <li><a href="#location">Locations</a></li>
         </ul>
       </nav>
     </header>
@@ -30,7 +31,7 @@
     <div class="content-container">
 
       <!-- Mission Container -->
-      <div class="mission-container">
+      <div class="mission-container" id="mission">
 
         <!-- Mission Text -->
         <div class="mission-text">
@@ -40,7 +41,7 @@
       </div>
 
       <!-- Featured container -->
-      <div class="featured-container">
+      <div class="featured-container" id="featured">
 
         <!-- Heading and descritpion -->
         <h2>Tea of the Month</h2>
@@ -72,7 +73,7 @@
       </div>
 
       <!-- Locations container -->
-      <div class="location-container">
+      <div class="location-container" id="location">
         <div class="location-title">
           <h2>Locations</h2>
         </div>
@@ -114,5 +115,6 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+  <script src="./resources/js/main.js"></script>
   </body>
 </html>
